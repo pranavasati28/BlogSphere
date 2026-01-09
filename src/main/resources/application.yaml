@@ -3,9 +3,9 @@ spring:
     name: blogSphere
 
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/blogsphere
+    username: postgres
+    password: postgrees
     driver-class-name: org.postgresql.Driver
 
   jpa:
