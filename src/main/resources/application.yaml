@@ -3,9 +3,10 @@ spring:
     name: blogSphere
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/blogsphere
-    username: postgres
-    password: postgrees
+    url: jdbc:postgresql://dpg-d5gh3bmr433s73dm6ns0-a.virginia-postgres.render.com:5432/blogspheredb
+    #postgresql://blogspheredb_user:7aafC7DfUNKKuR8d43MigSnT8er5e08J@dpg-d5gh3bmr433s73dm6ns0-a.virginia-postgres.render.com/
+    username: blogspheredb_user
+    password: 7aafC7DfUNKKuR8d43MigSnT8er5e08J
     driver-class-name: org.postgresql.Driver
 
   jpa:
