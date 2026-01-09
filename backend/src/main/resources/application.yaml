@@ -3,9 +3,10 @@ spring:
     name: blogSphere
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/blogsphere
-    username: postgres
-    password: postgrees
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -20,3 +21,6 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 5MB
+
+server:
+  port: ${PORT:8080}
